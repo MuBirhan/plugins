@@ -223,6 +223,7 @@ class Convert {
       return null;
     }
     final List<?> data = toList(o);
+
     return LatLngBounds.builder().include(toLatLng(data.get(0))).include(toLatLng(data.get(1))).build();
   }
 

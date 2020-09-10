@@ -23,7 +23,7 @@ class GoogleMap extends StatefulWidget {
   /// [AssertionError] will be thrown if [initialCameraPosition] is null;
   const GoogleMap({
     Key key,
-    @required this.initialCameraPosition,
+    this.initialCameraPosition,
     this.onMapCreated,
     this.gestureRecognizers,
     this.compassEnabled = true,
